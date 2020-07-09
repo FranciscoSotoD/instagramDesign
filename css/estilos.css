@@ -1,0 +1,229 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F8F9FA;
+}
+.contenedor {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.telefono {
+    width: 50%;
+}
+.telefono img {
+    max-width: 100%;
+}
+
+
+.formulario {
+    background: #fff;
+    width: 45%;
+    margin-left: 35px;
+    margin-top: 15px;
+}
+
+
+h2 {
+    font-size: 50px;
+    /*font-family: 'Lobster', cursive;*/
+    font-family: 'Norican', cursive;
+    font-weight: 300;
+    text-align: center;
+}
+
+.cajasTexto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.formulario .cajasTexto input[type="text"] {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 80%;
+    border: 1px solid #CFD2CD;
+    border-radius: 3px;
+    background: #F8F9FA;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.cajasTexto .boton {
+    width: 80%;
+    background: #53B3CB;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 8px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cajasTexto .boton:hover {
+    background: #fff;
+    color: #53B3CB;
+    border: 1px solid #53B3CB;
+}
+
+.cajasTexto a {
+    color: #3b5998;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.cajasTexto a:hover {
+    text-decoration: underline;
+}
+
+.registrate a:hover {
+    text-decoration: underline;
+}
+
+footer .enlaces a:hover {
+    text-decoration: underline;
+}
+
+.formulario .caja1 {
+    border: 1px solid #CFD2CD ;
+    margin-bottom: 10px;
+}
+
+.formulario .caja2 {
+    border: 1px solid #CFD2CD;
+    padding: 5px 5px;
+}
+
+a {
+    display: inline-block;
+}
+
+.registrate p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.registrate p a {
+    text-decoration: none;
+    color: #0077B6;
+    font-weight: 300;
+}
+
+.descargarApp p {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-align: center;    
+}
+
+.descargarApp .imagenes {
+    display: flex;
+    justify-content: space-around;
+}
+.descargarApp .imagenes img {
+    width: 45%;
+}
+
+.contenedorFooter {
+    width: 100%;
+    max-width: 900px;
+    /*background: #000;*/
+    margin: auto;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contenedorFooter .enlaces a {
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 13px;
+    color: #023E8A;
+}
+
+.contenedorFooter .enlaces p {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #6C757D;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .telefono {
+        display: none;
+    }
+
+    .formulario {
+        margin: auto;
+    }
+
+    .contenedorFooter {
+        width: 50%;
+    }
+
+    .contenedorFooter .enlaces a {
+        margin-bottom: 15px;
+    }
+
+    .enlaces {
+        justify-content: space-around;
+        margin-right: 5px;
+        line-height: 10px;
+    }
+}
+
+@media screen and (max-width:710px) {
+    .formulario {
+        width: 70%;
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .formulario {
+        width: 100%;
+        max-width: 358px;
+    }
+
+    .contenedorFooter {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .contenedor {
+        padding: initial;
+        margin: none;
+    }
+    .formulario .caja1 {
+        border: none;
+        margin-bottom: none;
+        margin-top: -30px;
+    }
+}
+
